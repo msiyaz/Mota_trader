@@ -17,7 +17,6 @@ router.get('/',async (req, res) => {
     }
 });
 
-
 router.put('/edit/:id', function(req, res){
     user.findByIdAndUpdate({_id: req.params.id},
                        {
